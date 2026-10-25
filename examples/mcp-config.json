@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "pkulaw-user-owned": {
+      "command": "node",
+      "args": ["/ABSOLUTE/PATH/pkulaw-tokenless-bridge/src/cli.js"],
+      "env": { "PKULAW_TOKEN": "" }
+    }
+  }
+}
