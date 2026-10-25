@@ -1,0 +1,31 @@
+{
+  "name": "@adelagary/pkulaw-tokenless-bridge",
+  "version": "0.1.0",
+  "description": "Credential-free distribution; per-instance user-supplied PKULAW credentials",
+  "type": "module",
+  "bin": {
+    "pkulaw-tokenless-bridge": "src/cli.js"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "examples"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node src/cli.js",
+    "test": "node --test test/*.test.js",
+    "check": "node --check src/core.js && node --check src/upstream.js && node --check src/cli.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.2"
+  },
+  "license": "MIT",
+  "author": "adelagary",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
